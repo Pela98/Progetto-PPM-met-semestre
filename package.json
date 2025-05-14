@@ -1,0 +1,26 @@
+{
+  "name": "progettoppmfrontend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.6"
+  },
+  "devDependencies": {
+    "sass": "^1.88.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pela98/Progetto-PPM-met-semestre.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Pela98/Progetto-PPM-met-semestre/issues"
+  },
+  "homepage": "https://github.com/Pela98/Progetto-PPM-met-semestre#readme",
+  "description": ""
+}
