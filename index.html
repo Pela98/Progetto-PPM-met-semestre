@@ -11,7 +11,30 @@
     <!-- Adattiamo la vista al 100% dello spazio disponibile su qualsiasi dispositivo
         initial-scale=1 -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <!-- modifiche custom -->
+    <style>
+        .box {
+            background-color: #ffffff; /* Un colore di sfondo chiaro per visualizzare i box */
+            border: 2px solid #dddddd; /* Un bordo sottile per separare i box */
+            padding: 15px;
+            text-align: left;
+        }
+        .title{
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #000000;
+        }
+        .subtitle{
+            font-size: 0.8em;
+            color: #2a2a2a;
+        }
+        .kind{
+             color: #002ad5;
+        }
+        .author{
+            color: #00024a;
+        }
+    </style>
     <!-- Nome del tab  -->
     <title>Il nome del Giornale</title>
     <!-- Includiamo boostrap css-->
@@ -23,31 +46,44 @@
 <body>
     <header>
     </header>
-    <nav>
 
+    <nav>
     </nav>
-    <div class="container-fluid" style="margin: 100px; align-content: center; justify-content: center; align-items: center; ">
-                                                                                                         <!-- articolo principale -->
+
+    <aside>
+    </aside>
+
+    <div class="container" style="align-content: center; justify-content: center; align-items: center; font-size: 1.2em">
+        <!-- articolo principale -->
+            <div class="row box" style="align-content: center; justify-content: center; align-items: center;">
                 <section>
-                    <picture >
-                        <img src="img/placeholder.png" alt="Immagine articolo principale" style="max-width: 100%;">
+
+                    <picture>
+                        <img src="img/placeholder.png" alt="Immagine articolo principale" style="max-width: 100%; ">
                     </picture>
-                    <footer>
-                        <a href="#">Tipo di articolo</a>
+
+                    <footer class="kind">
+                        <a style="color: darkblue" href="#">Tipo di Articolo</a>
                     </footer>
-                    <header>
-                       <h1>Inserisci qui il titolo dell'Articolo Principale</h1>
+
+                    <header class="title">
+                       <strong><a style="color: black" href="#">Inserisci qui il titolo dell'Articolo Principale</a></strong>
                     </header>
-                    <article>
+
+                    <article class="subtitle">
                         Inserisci qui la sinossi dell'Articolo Principale
                     </article>
-                    <footer>
-                     Di Inserisci qui autore articolo principale
-                    </footer>
-                </section>
 
+                    <footer class="author">
+                        <a style="color: black" href="#">Di Autore Articolo Principale</a>
+                    </footer>
+
+                </section>
+            </div>
+        <!-- seconda riga-->
         <div class="row">
-            <div class="col-md-3">                                                                                      <!-- colonna 1 -->
+
+            <div class="col-md-4 box">                                                                                      <!-- colonna 1 -->
                 <section>
                     <picture>
                         <img src="img/placeholder.png" alt="Immagine articolo colonna 1" style="max-width: 100%;">
@@ -56,7 +92,7 @@
                         <a href="#">Tipo di articolo</a>
                     </footer>
                     <header>
-                        <h2>Inserisci qui il titolo dell'articolo Colonna 1</h2>
+                        Inserisci qui il titolo dell'articolo Colonna 1
                     </header>
                     <article>
                         Inserisci qui la sinossi dell'Articolo Colonna 1
@@ -66,16 +102,16 @@
                     </footer>
                 </section>
             </div>
-            <div class="col-md-3">                                                                                      <!-- colonna 2 -->
+            <div class="col-md-4 box">                                                                                      <!-- colonna 2 -->
                 <section>
-                    <picture >
+                    <picture>
                         <img src="img/placeholder.png" alt="Immagine articolo colonna 2" style="max-width: 100%;">
                     </picture>
                     <footer>
                         <a href="#">Tipo di articolo</a>
                     </footer>
                     <header>
-                        <h2>Inserisci qui il titolo dell'articolo Colonna 2</h2>
+                        Inserisci qui il titolo dell'articolo Colonna 2
                     </header>
                     <article>
                         Inserisci qui la sinossi dell'Articolo Colonna 2
@@ -85,13 +121,13 @@
                     </footer>
                 </section>
             </div>
-            <div class="col-md-3">                                                                                      <!-- colonna 3 -->
-                <div class="row">
+            <div class="col-md-4">                                                                                      <!-- colonna 3 -->
+                <div class="row box">
                     <footer>
                         <a href="#">Tipo di articolo</a>
                     </footer>
                     <header>
-                        <h2>Inserisci qui il titolo dell'articolo Colonna 3 Riga 1</h2>
+                        Inserisci qui il titolo dell'articolo Colonna 3 Riga 1
                     </header>
                     <article>
                         Inserisci qui la sinossi dell'Articolo Colonna 3 Riga 1
@@ -100,13 +136,12 @@
                         Di <a href="#">Inserisci qui autore articolo Colonna 3 Riga 1</a>
                     </footer>
                 </div>
-            </div>
-                <div class="row">
+                <div class="row box">
                     <footer>
                         <a href="#">Tipo di articolo</a>
                     </footer>
                     <header>
-                        <h2>Inserisci qui il titolo dell'articolo Colonna 3 Riga 2</h2>
+                        Inserisci qui il titolo dell'articolo Colonna 3 Riga 2
                     </header>
                     <article>
                         Inserisci qui la sinossi dell'Articolo Colonna 3 Riga 2
@@ -115,9 +150,31 @@
                         Di <a href="#">Inserisci qui autore articolo Colonna 3 Riga 2</a>
                     </footer>
                 </div>
+            </div>
         </div>
-        <div class="row">
-            <div class="col-md-3"></div>
+        <div class="row box">
+            <div class="col-md-4 ">
+                <picture>
+                    <img src="img/placeholder.png" alt="Immagine articolo riga 3" style="max-width: 100%;">
+                </picture>
+            </div>
+            <div class="col-md-8 ">
+                <section>
+                    <footer>
+                        <a style="color: darkblue" href="#">Tipo di Articolo</a>
+                    </footer>
+                    <header style="font-size: 1.8em">
+                        <a style="color: black" href="#">Inserisci qui il titolo dell'Articolo Riga3</a>
+                    </header>
+                    <article>
+                        <a style="color: black" href="#">Inserisci qui la sinossi dell'Articolo Riga3</a>
+                    </article>
+                    <footer>
+                        <a style="color: black" href="#">Di Autore Articolo Colonna 4</a>
+                    </footer>
+
+                </section>
+            </div>
         </div>
     </div>
     <script type="text/javascript" src="js/jquery-1.11.3.min.js"></script>
